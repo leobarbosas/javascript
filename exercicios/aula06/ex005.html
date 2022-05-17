@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando números</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n1 = Number(prompt('Digite um valor'))
+        //PODEMOS MANDAR EXIBIR 2 CASAS DECIMAIS ATRAVÉS DO toFixed(2)
+        document.write(`${n1.toFixed(2)}<br/>`)
+        
+        //PODEMOS TAMBÉM MANDAR EXIBIR DIRETAMENTE EM FORMATO MONETÁRIO, DA SEGUINTE FORMA:
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency' ,currency:'BRL'}))
+        
+    </script>
+    
+</body>
+</html>
