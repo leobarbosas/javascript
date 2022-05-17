@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando strings</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*O writeln NÃO ESTÁ FUNCIONANDO, PODEMOS COLOCAR UM <br/> NO FINAL DA string. PODEMOS UTILIZAR TAGS HTML DENTRO DO JavaScript*/
+        
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. <br/>`)// ESCREVE NA TELA E O .length VAI CONTAR QUANTAS LETRAS TEM A string DIGITADA NO prompt
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br/>`)// DEIXA TODA A string EM MAIÚSCULA
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)//DEIXA TODA A string EM MINÚSCULA
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script</title>
+    <style>
+        body{
+            background-color: greenyellow;
+            color: rgb(190, 119, 68);
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        /*TEM UMA VERSÃO SIMPLIFICADA ONDE COLOCAMOS APENAS Number(), E O PRÓPRIO JAVASCRIPT VAI SABER SE É UM NÚMERO INTEIRO OU REAL(COM VÍRGULA) E VAI FAZER A CONVERSÃO.*/
+
+        /*PARA CONVERTERMOS DE UM number PARA string, PODEMOS FAZER DE 2 FORMAS,
+        String(n1) ou n1.toString*/
+
+        var n1 = Number.parseInt(window.prompt('Digite um número'))// RETORNA UMA string, INDEPENDENTE SE ESCREVER NÚMERO
+        var n2 = Number.parseInt(window.prompt('Digite outro valor'))// NESSE CASO PRECIAMOS CONVERTER OS VALORES DE string PARA number, COLOCAMOS AQUI Number.parseInt OU SÓ parseInt ou parseFloat.
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)// ESSA MANEIRA SE CHAMA template string
+
+
+    </script>
+</body>
+</html>
+
