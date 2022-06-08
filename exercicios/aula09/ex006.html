@@ -17,10 +17,21 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usaro <strong>DOM </strong>em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        window.document.write()
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        
+        /*document.write('Está escrito assim: ' + p1.innerText)
+        innerText TRAZ SOMENTE TEXTOS, SEM FORMATAÇÃO DE HTML.
+        innerHTML TRAZ O TEXTO FORMATADO COM AS TAGS HTML, NESSE EXEMPLO EM NEGRITO.*/
+        
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'*/
+        /*var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!!!'*/
+        var d = document.querySelector('div#msg')
     </script>
-
 </body>
 </html>
