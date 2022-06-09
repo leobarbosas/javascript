@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;;
+            background: #53aa53;
+            color: white;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--CRIANDO EVENTO DENTRO DO HTML-->
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">-->
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        // NÃO É RECOMENDADO COLOCAR O var FORA DO FUNCTION, ESTUDAR MAIS SOBRE ESCOPO.
+        //DENTRO DOS () COLOCAR O MESMO NOME DO id.
+        var area = document.getElementById('area')
+        //CRIANDO EVENTOS DENTRO DO JavaScript, SE FOR CRIAR NO HTML NÃO PRECISA DESSAS LINHAS.
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = '#53aa53'//NÃO FUNCIONA COM CÓDIGO RGB.
+        }
+    </script>
+</body>
+</html>

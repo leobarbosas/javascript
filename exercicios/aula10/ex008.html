@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+        input{
+            font: normal 15pt Arial;
+            width: 100px;
+        }
+        #res{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="SOMAR" onclick="somar()">
+    <div id="res">Resultado</div>
+
+
+    <script>
+        function somar(){
+            //ESSAS VARIÁVEIS SÃO DA CAIXA DE TEXTO E NÃO DO VALOR.
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            //ESSAS VARIÁVEIS SÃO DOS VALORES DIGITADOS NA CAIXA, POIS POR PADRÃO ELE VEM COMO TEXTO E PRECISAMOS CONVERTAR PARA NÚMERO. 
+            var n1 = Number(tn1.value)// POSSO USAR TAMBÉM O .parseInt.
+            var n2 = Number(tn2.value)
+            var resultado = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${resultado}</strong>`
+
+        }
+    </script>
+    
+</body>
+</html>
