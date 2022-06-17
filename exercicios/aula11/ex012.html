@@ -26,11 +26,15 @@
             var pais = document.querySelector('input#txtpais')
             var resultado = document.querySelector('div#res')
             var analiza = pais.value
+            resultado.innerHTML = (`<p>Vivendo em <strong>${analiza}</strong></p>`)
+            
             if(analiza == 'Brasil' || analiza == 'brasil'){
-                resultado.innerHTML = `Vivendo em <strong>${analiza}</strong>, você é <strong>Brasileiro!</strong>`
+                resultado.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
             } else{
-                resultado.innerHTML = `Vivendo em <strong>${analiza}</strong>, você é <strong>Estrangeiro!</strong>`
+                resultado.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
             }
+            
+
         }
     </script>
     
