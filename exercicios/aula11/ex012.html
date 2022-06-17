@@ -27,13 +27,11 @@
             var resultado = document.querySelector('div#res')
             var analiza = pais.value
             if(analiza == 'Brasil' || analiza == 'brasil'){
-                resultado.innerHTML = `Você é do ${analiza}, portanto, é Brasileiro!`
+                resultado.innerHTML = `Você é do <strong>${analiza}</strong>, portanto, é <strong>Brasileiro!</strong>`
             } else{
-                resultado.innerHTML = `Você é do(a) ${analiza}, portanto é estrangeiro!`
+                resultado.innerHTML = `Você é do(a) <strong>${analiza}</strong>, portanto é <strong>estrangeiro!</strong>`
             }
-            
         }
-
     </script>
     
 </body>
