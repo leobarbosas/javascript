@@ -33,7 +33,7 @@ function mostrar(){
         }else{
             img.setAttribute('src', 'foto-idoso-m.png')
         }
-    }else{
+    }else if(fsex[1].checked ){
         genero = 'Mulher'
         if(idade >= 0 && idade < 10){
             img.setAttribute('src', 'foto-bebe-f.png')
